@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Form</title>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+   <div class="container  mt-5">
+    <div class="row justify-content-center rental p-5">
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
+        <h2 class="mb-4">Rental Form</h2>
+        <form id="rentalForm" action="#" >
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+                <div id="nameError" class="form-text text-danger"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+                <div id="phoneError" class="form-text text-danger"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="relative-phone" class="form-label">Relative's Phone Number:</label>
+                <input type="tel" class="form-control" id="relative-phone" name="relative-phone" required>
+                <div id="relativePhoneError" class="form-text text-danger"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="photo" class="form-label">Personal Photo:</label>
+                <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required>
+                <img id="photoPreview" class="mt-2 preview-image" src="#" alt="Photo preview" style="display:none;">
+            </div>
+
+            <div class="mb-3">
+                <label for="license" class="form-label">Driver's License:</label>
+                <input type="file" class="form-control" id="license" name="license" accept="image/*" required>
+                <img id="licensePreview" class="mt-2 preview-image" src="#" alt="License preview" style="display:none;">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+        </form>
+    </div>
+</div>
+</div>
+    <script src="js/minejs"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
